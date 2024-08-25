@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background: #050e2d;
+}
+
+/*Scrool Bar*/
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 6px;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+    height: 100px;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1) ;
+
+}
+header .logo{
+    position: relative;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 80px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef ;
+}
+
+/* home banner */
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2{
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p{
+    font-size: 1em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef ;
+}
+
+.banner .bg img{
+    width: 400px;
+}
+
+/*ABOUT*/
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.about .contentBox{
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBox h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.about .contentBox pre{
+    max-width: 900px;
+    text-align: justify;
+    color: #dbd9d9;
+    font-size: 1vw;
+}
+
+.about img{
+    width: 400px;
+}
+
+/*Games*/
+
+.games {
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.games ul li.active{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef ;
+}
+
+.games .cardBox{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.games .cardBox .card{
+    width: 1915px;
+    border-radius: 10px;
+    margin: 50px 100px;
+    background: #1b2141;
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+
+.games .cardBox .card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1) ;
+    }
+}
+
+
+.games .cardBox .card.hide{
+    display: none;
+}
+
+.games .cardBox .list.hide{
+    display: none;
+}
+
+/*Footer*/
+
+footer{
+    padding: 10px 100px;
+}
+
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+footer .info .logo{
+    position: relative;
+}
+
+footer .info .logo img{
+    width: 150px;
+}
+
+footer .info p{
+    color: #dbd9d9;
+}
+
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+}
+
+footer .info ul li:hover{
+    background: #1aeeef;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+footer .info ul li a i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer .info ul li:hover a i{
+    color: #050e2d;
+}
+
+.animeX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*Responsive Desing*/
+@media (max-width: 1041px)
+{
+    header{
+        height: 100px;
+        padding: 15px 40px;
+    }
+
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #1b2141;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    header .nav.active{
+        display: flex;
+    }
+
+    header .nav li{
+        margin: 20px 0;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background:url(/image/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .toggleMenu.active{
+        background: url(/image/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .banner .bg img{
+        position: absolute;
+    } 
+
+    .banner .bg .content{
+        width: 100%;
+        height: 100%;
+        background: rgb(27 33 65 / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBox{
+        width: 100%;
+    }
+    footer .info{
+        flex-direction: column;
+        align-content: center
+    }
+
+}

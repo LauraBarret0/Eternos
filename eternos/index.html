@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/android-chrome-192x192.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>ETERNOS - JOGO DE CARTAS</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="image/Eternos.png" alt="Logo"></a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#regras">Regras do Jogo</a></li>
+            <li><a href="#cartas">Cartas</a></li>
+        </ul>
+
+        
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+    <!-- Home Banner-->
+    <div class="banner " id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>CARD GAME <br>
+                     ETERNOS   
+                </h2>
+                <p>ETERNOS é o melhor jogo de cartas que combina personagens históricos e elementos da natureza. Além de habilidades diversas que garantem a sua diversão!!!  </p>
+                <a href="#regras" class="btn">Saiba Mais</a>
+            </div>
+            <img src="image/cards.png" alt="Cartas Jogo">
+        </div>
+    </div>
+
+    <!--About-->>
+    <span id="regras"></span>
+    <div class="about animeX " >
+        <div class="contentBox">
+    <h2>Regras do Jogo</h2>
+    <br>    
+    <pre>
+        1- Separe as cartas de personagens das de suporte.
+        2- Embaralhe -as  e deixe uma pilha para personagens e outra para suporte.
+        3- Cada jogador vai pegar 5 cartas de personagens e 2 cartas de suporte.
+        4- A batalha será 1x1, ou seja, 1 carta vs 1 carta.
+        5- Os jogadores vão tirar Jokenpô para decidir quem vai jogar primeiro.
+        6- O jogador que ganhar vai escolher uma de suas cartas normais para 
+        iniciar. Será opcional anexar uma carta de suporte. 
+        7- Depois que as duas cartas se atacarem os jogadores vão decidir se querem
+        continuar com aquela carta no campo de batalha ou se vão trocar por outra do
+        deck. 
+        8- Quando uma carta "morre" o player que a matou ganha moedas. Com essas
+        moedas é possível desbloquear uma habilidade especial nas cartas Pratas
+        e  Ouro ou comprar uma nova carta.
+                Se matar uma carta ouro:   3 moedas
+                Se matar uma carta prata:  2 moedas
+                Se matar uma carta bronze: 1 moeda
+
+        8- Ganha o jogo quando alguém perder todas as cartas.
+
+
+        <h2>Observações</h2>    
+        - Contém 100 cartas (85 - personagens; 15 - Suporte )
+        - Contém 50 moedas.
+        - Até 2 jogadores. 
+
+        1- Em toda a partida os jogadores podem ter no máximo 7 cartas (5 personagens e 2
+        de suporte).
+        2- As cartas de suporte podem ser anexadas a uma carta de personagem caso o jogador 
+        queira. Elas deixam as cartas normais mais fortes.
+        3- Ao anexar uma carta de suporte a um personagem ela ficará lá até o personagem morrer. 
+        Depois disso ela é mandada para a pilha de descarte.
+        4- Caso o player opte por comprar uma nova carta terá que descartar uma 
+        de suas cartas na pilha de descarte, mas terá que descartar a carta com mais <em>HP</em>.
+        5- O preço para comprar uma carta são 2 moedas.
+        6- Para desbloquear uma habilidade 3 moedas.   
+    </pre>
+           
+        </div>
+        <img style="width: 300px;" src="image/Jogo.png" alt="Cartas do Jogo e a Moeda">
+    </div>
+
+    <!--Games-->
+    <span id="cartas"></span>
+    <span></span>
+    <div class="games animeX " >
+        <h2 >CARTAS DO JOGO</h2>
+        <ul>
+            <li class="list active" data-filter="all">Todas</li>
+            <li class="list " data-filter="rare">Cartas Raras</li>
+            <li class="list" data-filter="silver">Cartas de Prata</li>
+            <li class="list" data-filter="bronze">Cartas de Bronze</li>
+            <li class="list " data-filter="sup">Cartas de Suporte</li>
+        </ul>
+        <div class="cardBox">
+            <div class="card" data-item="rare">
+                <img src="image/Raras.png" alt="Cartas Raras">
+            </div>
+
+            <div class="card" data-item="silver">
+                <img src="image/Pratas.png" alt="Cartas Prata">
+            </div>
+            
+            <div class="card" data-item="bronze">
+                <img src="image/Bronze 1.png" alt="Cartas Bronze">
+            </div>
+
+            <div class="card" data-item="bronze">
+                <img src="image/Bronze 2.png" alt="Cartas Bronze">
+            </div>
+
+            <div style="width: 150px;" class="card" data-item="bronze">
+                <img src="image/Carta 85 - George Boole - Bronze.jpg" alt="Cartas Bronze">
+            </div>
+
+            <div class="card" data-item="sup">
+                <img src="image/Suporte.png" alt="Cartas Suporte">
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Footer-->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo"><img src="image/Eternos.png" alt="Logo"></a>
+            <p><i class='bx bxs-copyright'></i>2022 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook' ></i></box-icon></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></box-icon></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></box-icon></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></box-icon></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        /*Sticky NavBar*/
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+
+        /*Responsive NavBar*/
+
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        /*Scrooline Animation Effects*/
+        window.addEventListener('scroll', function(){
+            var anime = document.querySelectorAll('.animeX')
+
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 50;
+
+                if(animetop <  windowheight - animepoint ){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active')
+                }
+            }
+        })
+
+        /*Filterable Cards*/
+
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i = 0; i<list.length; i++){
+            list[i].addEventListener('click', function(){
+                for(let j = 0; j<list.length; j++){
+                    list[j].classList.remove('active');           
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for( let k=0; k<card.length; k++)
+                {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                        card[k].classList.remove('hide')
+                        card[k].classList.add('active')
+                    }
+                    
+                }       
+            })   
+        }
+    </script>
+</body> 
+</html>
